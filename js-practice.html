@@ -10,6 +10,7 @@
   <script>
     // Math in JavaScript
     console.log('Let\'s do math:');
+
     let x = 5;
     console.log(x);
     let y = 3;
@@ -23,8 +24,10 @@
     console.log(b);
     let c = ((b - a) + a) / b;
     console.log(c);
+
     // Working with strings
     console.log('Working with strings:');
+
     let firstName = 'Mckenzie';
     console.log(firstName);
     let middleName = 'Rene';
@@ -36,6 +39,29 @@
     //  Strings on my own
     let greeting = 'My name is ' + name;
     console.log(greeting);
+
+    // Practicing functions
+    console.log('Using functions:');
+
+    // function to make square numbers
+    function makeSquare(theNumb) {
+      let squared = theNumb * theNumb;
+      return squared;
+    }
+    let try01 = makeSquare(3);
+    console.log(try01);
+    // Functions on my own
+    // A function to combine full name
+    function makeName(firstName, middleName, lastName) {
+      let fullName = firstName + ' ' + middleName + ' ' + lastName;
+      return fullName;
+    }
+    let take01 = makeName('John', 'Doe', 'Brown');
+    console.log(take01);
+    let take02 = makeName('Chicken', 'Smith', 'Waffles');
+    console.log(take02);
+    let take03 = makeName('Robert', 'Beto', 'O\'Rourke');
+    console.log(take03);
   </script>
 </body>
 </html>
