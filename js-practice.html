@@ -62,6 +62,39 @@
     console.log(take02);
     let take03 = makeName('Robert', 'Beto', 'O\'Rourke');
     console.log(take03);
+
+    // Functions with flow control
+    console.log('Making better name function:')
+
+    // A better name function to fix middle initials
+    function makeBetterName(firstName, middleName, lastName) {
+      if (middleName.length === 1) {
+        middleName = middleName + '.';
+        return middleName;
+      } else {
+        return false;
+      }
+      let fullName = firstName + ' ' + middleName + ' ' + lastName;
+      return fullName;
+    }
+    console.log(makeBetterName('Joan', 'Marie', 'Larkin'));
+    console.log(makeBetterName('John', 'F', 'Kennedy'));
+    console.log(makeBetterName('Tiffany', 'L', 'Gold'));
+    
+    // A function to compare scores and return text
+    console.log('scoreCompare function');
+    function scoreCompare(home, away) {
+      if (home > away) {
+        return 'Home team wins!';
+      } else if (home === away) {
+        return 'It was a tie';
+      } else {
+        return 'Away team wins :(';
+      }
+    }
+    console.log(scoreCompare(5,3));
+    console.log(scoreCompare(3,5));
+    console.log(scoreCompare(3,3));
   </script>
 </body>
 </html>
